@@ -53,6 +53,15 @@ Other options: `-DryRun` (show what it would do), `-Restore` (put the original b
 2. For each streamed file over 1 MB that is a RIFF `fmt` tag `0xFFFF` (Wwise Vorbis), build a silent stereo 48 kHz 16-bit PCM `RIFF/WAVE` of exactly the same size (extensible `fmt`, zeroed `data`, small `JUNK` chunk as padding).
 3. Write it over the original bytes in place, then re-read and verify.
 
+## Verify the download
+
+The release zip was scanned on VirusTotal: [scan results](https://www.virustotal.com/gui/file/78d20f907027697c8d86fe7403ba740f4998ab821fa8e4d1e41c99706eea2d80)
+
+SHA-256 of `MSFS24_Silence_Loading_Music.zip`:
+`78d20f907027697c8d86fe7403ba740f4998ab821fa8e4d1e41c99706eea2d80`
+
+Check yours with `Get-FileHash .\MSFS24_Silence_Loading_Music.zip` in PowerShell. Or skip the zip and read the source here.
+
 ## Support
 
 Found a bug or have a question? [Open an issue](https://github.com/ItzSteveHuh/MSFS24_Silence_Loading_Music/issues). Please include whether you're on Steam or Microsoft Store, your MSFS 2024 version, and the text the tool printed when you ran it.
