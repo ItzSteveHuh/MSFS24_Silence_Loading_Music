@@ -53,10 +53,16 @@ Other options: `-DryRun` (show what it would do), `-Restore` (put the original b
 2. For each streamed file over 1 MB that is a RIFF `fmt` tag `0xFFFF` (Wwise Vorbis), build a silent stereo 48 kHz 16-bit PCM `RIFF/WAVE` of exactly the same size (extensible `fmt`, zeroed `data`, small `JUNK` chunk as padding).
 3. Write it over the original bytes in place, then re-read and verify.
 
+## Support
+
+Found a bug or have a question? [Open an issue](https://github.com/ItzSteveHuh/MSFS24_Silence_Loading_Music/issues). Please include whether you're on Steam or Microsoft Store, your MSFS 2024 version, and the text the tool printed when you ran it.
+
 ## Disclaimer
 
 Use at your own risk. Not affiliated with or endorsed by Asobo Studio, Xbox Game Studios or Microsoft. "Microsoft Flight Simulator" is a trademark of Microsoft.
 
 ## License
 
-[MIT](LICENSE)
+Copyright (C) 2026 ItzSteveHuh. Licensed under the [GNU General Public License v3.0](LICENSE) (or, at your option, any later version).
+
+You're free to read, run, modify and share this code. If you distribute it or a modified version, it must stay under the same license, the full source must be available, your copy must keep the original copyright notices, and you must clearly mark what you changed.
