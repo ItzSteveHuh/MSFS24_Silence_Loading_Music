@@ -10,7 +10,7 @@ copy, and makes a backup (SHARED_MINIMAL.PC.PCK.bak) first.
 
 Usage (or just double-click the .bat files):
     .\msfs24_silence_loading_music.ps1                 # auto-find the file and patch it
-    .\msfs24_silence_loading_music.ps1 -Path "D:\...\SHARED_MINIMAL.PC.PCK"
+    .\msfs24_silence_loading_music.ps1 -Path "<your MSFS 2024 folder>\Packages\fs-base-onboarding\SOUNDINIT\SHARED_MINIMAL.PC.PCK"
     .\msfs24_silence_loading_music.ps1 -Restore        # put the original back
     .\msfs24_silence_loading_music.ps1 -DryRun         # show what it would do
 
@@ -109,7 +109,7 @@ if (-not $Path) { $Path = Find-Pck }
 if (-not $Path -or -not (Test-Path -LiteralPath $Path -PathType Leaf)) {
     Write-Host "Couldn't find SHARED_MINIMAL.PC.PCK automatically."
     Write-Host 'Run again with the full path, e.g.:'
-    Write-Host '  .\msfs24_silence_loading_music.ps1 -Path "D:\SteamLibrary\steamapps\common\MSFS2024\Packages\fs-base-onboarding\SOUNDINIT\SHARED_MINIMAL.PC.PCK"'
+    Write-Host '  .\msfs24_silence_loading_music.ps1 -Path "<your MSFS 2024 folder>\Packages\fs-base-onboarding\SOUNDINIT\SHARED_MINIMAL.PC.PCK"'
     exit 1
 }
 Write-Host "File: $Path"

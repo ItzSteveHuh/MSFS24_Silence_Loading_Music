@@ -23,11 +23,17 @@ That file is a Wwise `AKPK` container holding four sound banks and one streamed 
 3. Double-click **`1_Silence_Loading_Music.bat`**.
 4. Launch the sim.
 
-It searches all drives for your install. If it can't find it, pass the path:
+It searches all drives for your install. If it can't find it, pass the full path to the file. Your install location will be different from anyone else's, so point it at wherever *your* MSFS 2024 folder is:
 
 ```powershell
-.\msfs24_silence_loading_music.ps1 -Path "D:\SteamLibrary\steamapps\common\MSFS2024\Packages\fs-base-onboarding\SOUNDINIT\SHARED_MINIMAL.PC.PCK"
+.\msfs24_silence_loading_music.ps1 -Path "<your MSFS 2024 folder>\Packages\fs-base-onboarding\SOUNDINIT\SHARED_MINIMAL.PC.PCK"
 ```
+
+Typical install folders (yours may be on another drive or library):
+- **Steam:** `...\steamapps\common\MSFS2024`
+- **Microsoft Store / Xbox app:** `...\XboxGames\Microsoft Flight Simulator 2024\Content`
+
+Tip: in Steam, right-click the game > Manage > Browse local files to open your install folder.
 
 Other options: `-DryRun` (show what it would do), `-Restore` (put the original back; same as `2_Restore_Original.bat`).
 
